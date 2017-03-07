@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bulma": "^0.3.2"
+    "bulma": "^0.3.2",
+    "headroom.js": "^0.9.3"
   },
   "devDependencies": {},
   "scripts": {

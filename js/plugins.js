@@ -22,3 +22,14 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+function headroomHeader() {
+    var options = {
+        "offset": 205,
+        "tolerance": 5
+    };
+    var headNav = document.querySelector('.nav');
+    var headroom = new Headroom(headNav, options);
+    headroom.init();
+}
+
+document.addEventListener('DOMContentLoaded', headroomHeader);
