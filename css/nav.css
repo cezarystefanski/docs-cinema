@@ -1,8 +1,9 @@
-.headroom {
+.hero .headroom {
   will-change: transform;
   transition: transform 200ms linear;
   position: fixed;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .headroom--pinned {

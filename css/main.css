@@ -56,7 +56,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+.logo-docs {
+  background-image: url("../assets/img/hero-logo.jpg");
+  background-attachment: fixed;
+    background-size: cover;
+    background-position-x: 20%;
+}
 
 
 
