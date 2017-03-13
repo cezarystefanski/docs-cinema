@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -18,142 +19,388 @@
     <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-    <section class="hero is-fullheight is-dark">
-        <div class="hero-head">
-            <nav class="nav">
-                <div class="nav-left">
-                    <a class="nav-item" href="/">Docs Cinema</a>
-                </div>
-                <span id="nav-toggle" class="nav-toggle"></span>
-                <ul class="nav-right nav-menu">
-                    <li class="nav-item"><a href="/">Products &amp; Services</a></li>
-                    <li class="nav-item"><a href="/">Dodaj film</a></li>
-                    <li class="nav-item"><a href="/">Katalog</a></li>
-                    <li class="nav-item"><a href="/">Sklep</a></li>
-                    <li class="nav-item"><a href="/">Zespół</a></li>
-                    <li class="nav-item"><a href="/">Współpraca</a></li>
-                    <li class="nav-item"><a href="/">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="hero-body logo-docs">
+    <section class="section hero is-fullheight loading-in-progress is-vibrant-two">
+        <div class="hero-body">
             <div class="container has-text-centered">
-                <h1>DOCS CINEMA</h1>
-                <h2 class="title is-2">Poszerzamy horyzonty</h1>
-                <h3 class="subtitle is-4">
-                    Dla miłośników filmów dokumentalnych<br />
-                    i dla tych dla których pasją jest ich tworzenie
-                </h2>
+                <div class="cube-wrapper">
+                    <div class="cube-folding">
+                        <span class="leaf1"></span>
+                        <span class="leaf2"></span>
+                        <span class="leaf3"></span>
+                        <span class="leaf4"></span>
+                    </div>
+                    <span class="loading" data-name="Loading">Ładowanie</span>
+                </div>
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="container has-text-centered">
-            <h2 class="title">Opis rynku</h2>
-            <p class="subtitle">Zapraszamy do oderwania się od przyzwyczajeń i stereotypów, do otwarcia się na świat pokazywany przez najciekawszy i najszybciej
-rozwijający się gatunek filmowy: FILM DOKUMENTALNY</p>
-        </div>
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
-        <p>4</p>
-        <p>5</p>
-        <p>6</p>
-        <p>7</p>
-        <p>8</p>
-        <p>9</p>
-        <p>10</p>
-        <p>11</p>
-        <p>12</p>
-        <p>13</p>
-        <p>14</p>
-        <p>15</p>
-        <p>16</p>
-        <p>17</p>
-        <p>18</p>
-        <p>19</p>
-        <p>20</p>
-        <p>21</p>
-        <p>22</p>
-        <p>23</p>
-        <p>24</p>
-        <p>25</p>
-        <p>26</p>
-        <p>27</p>
-        <p>28</p>
-        <p>29</p>
-        <p>30</p>
-        <p>31</p>
-        <p>32</p>
-        <p>33</p>
-        <p>34</p>
-        <p>35</p>
-        <p>36</p>
-        <p>37</p>
-        <p>38</p>
-        <p>39</p>
-        <p>40</p>
-        <p>41</p>
-        <p>42</p>
-        <p>43</p>
-        <p>44</p>
-        <p>45</p>
-        <p>46</p>
-        <p>47</p>
-        <p>48</p>
-        <p>49</p>
-        <p>50</p>
-        <p>51</p>
-        <p>52</p>
-        <p>53</p>
-        <p>54</p>
-        <p>55</p>
-        <p>56</p>
-        <p>57</p>
-        <p>58</p>
-        <p>59</p>
-        <p>60</p>
-        <p>61</p>
-        <p>62</p>
-        <p>63</p>
-        <p>64</p>
-        <p>65</p>
-        <p>66</p>
-        <p>67</p>
-        <p>68</p>
-        <p>69</p>
-        <p>70</p>
-        <p>71</p>
-        <p>72</p>
-        <p>73</p>
-        <p>74</p>
-        <p>75</p>
-        <p>76</p>
-        <p>77</p>
-        <p>78</p>
-        <p>79</p>
-        <p>80</p>
-        <p>81</p>
-        <p>82</p>
-        <p>83</p>
-        <p>84</p>
-        <p>85</p>
-        <p>86</p>
-        <p>87</p>
-        <p>88</p>
-        <p>89</p>
-        <p>90</p>
-        <p>91</p>
-        <p>92</p>
-        <p>93</p>
-        <p>94</p>
-        <p>95</p>
-        <p>96</p>
-        <p>97</p>
-        <p>98</p>
-        <p>99</p>
-        <p>100</p>
-    </section>
+    <div class="site-content site-content-hidden" style="display:none;">
+        <section class="hero is-fullheight is-dark">
+            <div class="hero-body logo-docs" data-type="background" data-speed="5">
+                <div class="container has-text-centered">
+                    <h1>DOCS CINEMA</h1>
+                    <h2 class="title is-2">Poszerzamy horyzonty</h1>
+                        <h3 class="subtitle is-4">
+                            Dla miłośników filmów dokumentalnych<br /> i dla tych dla których pasją jest ich tworzenie
+                    </h2>
+                </div>
+            </div>
+            <div class="hero-head">
+                <nav class="nav">
+                    <div class="nav-left">
+                        <a class="nav-item" href="/">Docs Cinema</a>
+                    </div>
+                    <span id="nav-toggle" class="nav-toggle"></span>
+                    <ul class="nav-right nav-menu">
+                        <li class="nav-item"><a href="/">Products &amp; Services</a></li>
+                        <li class="nav-item"><a href="/">Dodaj film</a></li>
+                        <li class="nav-item"><a href="/">Katalog</a></li>
+                        <li class="nav-item"><a href="/">Sklep</a></li>
+                        <li class="nav-item"><a href="/">Zespół</a></li>
+                        <li class="nav-item"><a href="/">Współpraca</a></li>
+                        <li class="nav-item"><a href="/">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container has-text-centered">
+                <h2 class="title">Opis rynku</h2>
+                <p class="subtitle">Zapraszamy do oderwania się od przyzwyczajeń i stereotypów, do otwarcia się na świat pokazywany przez najciekawszy
+                    i najszybciej rozwijający się gatunek filmowy: FILM DOKUMENTALNY</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container film-tiles">
+                <div class="tile is-ancestor">
+                    <div class="tile is-8 is-vertical">
+                        <div class="tile is-parent is-vertical">
+                            <article class="tile is-child has-text-centered">
+                                <h2>Dokumentalne</h2>
+                            </article>
+                            <article class="tile is-child has-text-centered box">
+                                <h3>Gatunki</h3>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child has-text-centered box">
+                                <h3>Premium</h3>
+                            </article>
+                            <article class="tile is-child has-text-centered box">
+                                <h3>Polecane</h3>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child has-text-centered box">
+                                <h3>Dla miłośników reklam</h3>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tile is-parent is-vertical is-4">
+                        <article class="tile is-child has-text-centered box">
+                            <h3>Dla dzieci</h3>
+                        </article>
+                        <article class="tile is-child has-text-centered box">
+                            <h3>Edukacyjne</h3>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section is-vibrant-one">
+            <h2 class="title has-text-centered">Nasze usługi</h2>
+            <div class="container">
+                <div class="content">
+                    <h3 class="has-text-centered">Dla widzów</h3>
+                </div>
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <div class="box content">
+                            <h3 class="has-text-centered"><i class="fa fa-film" aria-hidden="true"></i></h3>
+                            <h3 class="has-text-centered">Kanały filmowe</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis nostrum eligendi
+                                sit. Eligendi perspiciatis nesciunt saepe et, consequatur labore assumenda dolorem maiores
+                                voluptate blanditiis iste illum laboriosam neque obcaecati.</p>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="box content">
+                            <h3 class="has-text-centered"><i class="fa fa-film" aria-hidden="true"></i></h3>
+                            <h3 class="has-text-centered">Sklep</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis nostrum eligendi
+                                sit. Eligendi perspiciatis nesciunt saepe et, consequatur labore assumenda dolorem maiores
+                                voluptate blanditiis iste illum laboriosam neque obcaecati.</p>
+
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="box content">
+                            <h3 class="has-text-centered"><i class="fa fa-film" aria-hidden="true"></i></h3>
+                            <h3 class="has-text-centered">Domowa wypożyczalnia</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis nostrum eligendi
+                                sit. Eligendi perspiciatis nesciunt saepe et, consequatur labore assumenda dolorem maiores
+                                voluptate blanditiis iste illum laboriosam neque obcaecati.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <div class="box content">
+                            <h3 class="has-text-centered"><i class="fa fa-film" aria-hidden="true"></i></h3>
+                            <h3 class="has-text-centered">Prywatny seans</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis nostrum eligendi
+                                sit. Eligendi perspiciatis nesciunt saepe et, consequatur labore assumenda dolorem maiores
+                                voluptate blanditiis iste illum laboriosam neque obcaecati.</p>
+
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="box content">
+                            <h3 class="has-text-centered"><i class="fa fa-film" aria-hidden="true"></i></h3>
+                            <h3 class="has-text-centered">Zamówienie na kopię filmową</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis nostrum eligendi
+                                sit. Eligendi perspiciatis nesciunt saepe et, consequatur labore assumenda dolorem maiores
+                                voluptate blanditiis iste illum laboriosam neque obcaecati.</p>
+
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="box content">
+                            <h3 class="has-text-centered"><i class="fa fa-film" aria-hidden="true"></i></h3>
+                            <h3 class="has-text-centered">Bądź częścią zespołu</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis nostrum eligendi
+                                sit. Eligendi perspiciatis nesciunt saepe et, consequatur labore assumenda dolorem maiores
+                                voluptate blanditiis iste illum laboriosam neque obcaecati.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section is-vibrant-one">
+            <div class="container">
+                <div class="content">
+                    <h3 class="has-text-centered">Dla producentów</h3>
+                </div>
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <div class="box content">
+                            <h3 class="has-text-centered"><i class="fa fa-tv" aria-hidden="true"></i></h3>
+                            <h3 class="has-text-centered">Usługi reklamowe</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis nostrum eligendi
+                                sit. Eligendi perspiciatis nesciunt saepe et, consequatur labore assumenda dolorem maiores
+                                voluptate blanditiis iste illum laboriosam neque obcaecati.</p>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="box content">
+                            <h3 class="has-text-centered"><i class="fa fa-tv" aria-hidden="true"></i></h3>
+                            <h3 class="has-text-centered">Dystrybucja</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis nostrum eligendi
+                                sit. Eligendi perspiciatis nesciunt saepe et, consequatur labore assumenda dolorem maiores
+                                voluptate blanditiis iste illum laboriosam neque obcaecati.</p>
+
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="box content">
+                            <h3 class="has-text-centered"><i class="fa fa-tv" aria-hidden="true"></i></h3>
+                            <h3 class="has-text-centered">Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis nostrum eligendi
+                                sit. Eligendi perspiciatis nesciunt saepe et, consequatur labore assumenda dolorem maiores
+                                voluptate blanditiis iste illum laboriosam neque obcaecati.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <div class="box content">
+                            <h3 class="has-text-centered"><i class="fa fa-tv" aria-hidden="true"></i></h3>
+                            <h3 class="has-text-centered">Reprezentowanie praw filmowych</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis nostrum eligendi
+                                sit. Eligendi perspiciatis nesciunt saepe et, consequatur labore assumenda dolorem maiores
+                                voluptate blanditiis iste illum laboriosam neque obcaecati.</p>
+
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="box content">
+                            <h3 class="has-text-centered"><i class="fa fa-tv" aria-hidden="true"></i></h3>
+                            <h3 class="has-text-centered">Udźwiękawianie i dubbingowanie filmów</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis nostrum eligendi
+                                sit. Eligendi perspiciatis nesciunt saepe et, consequatur labore assumenda dolorem maiores
+                                voluptate blanditiis iste illum laboriosam neque obcaecati.</p>
+
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="box content">
+                            <h3 class="has-text-centered"><i class="fa fa-tv" aria-hidden="true"></i></h3>
+                            <h3 class="has-text-centered">Badania i analizy rynkowe</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nobis nostrum eligendi
+                                sit. Eligendi perspiciatis nesciunt saepe et, consequatur labore assumenda dolorem maiores
+                                voluptate blanditiis iste illum laboriosam neque obcaecati.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section is-vibrant-two">
+            <h2 class="title has-text-centered">Zespół</h2>
+            <div class="content container">
+                <div class="tile is-ancestor has-text-centered">
+                    <div class="tile is-parent is-vertical is-4">
+                        <article class="tile is-child box">
+                            <h3>Nasza historia</h3>
+                        </article>
+                        <article class="tile is-child box">
+                            <h3>Nasz zespół</h3>
+                        </article>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child box">
+                            <h3>Nasze wartości</h3>
+                        </article>
+                    </div>
+                </div>
+                <p class="has-text-centered">Myślimy globalnie, działamy lokalnie!</p>
+                <p class="has-text-centered">
+                    Dołącz do zespołu:<br /> Niemcy / Czechy / etc.
+                </p>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="title has-text-centered">Współpraca</h2>
+            <div class="container content has-text-centered">
+                <div class="columns">
+                    <div class="column is-2">
+                        <div class="box">
+                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
+                            <p>firma 1</p>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="box">
+                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
+                            <p>firma 2</p>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="box">
+                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
+                            <p>firma 3</p>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="box">
+                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
+                            <p>firma 4</p>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="box">
+                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
+                            <p>firma 5</p>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="box">
+                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
+                            <p>firma 6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-2">
+                        <div class="box">
+                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
+                            <p>firma 1</p>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="box">
+                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
+                            <p>firma 2</p>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="box">
+                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
+                            <p>firma 3</p>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="box">
+                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
+                            <p>firma 4</p>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="box">
+                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
+                            <p>firma 5</p>
+                        </div>
+                    </div>
+                    <div class="column is-2">
+                        <div class="box">
+                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
+                            <p>firma 6</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <form action="">
+                    <p class="control has-addons has-addons-centered">
+                        <input class="input" type="email" placeholder="Email">
+                        <a class="button is-accent">Zapisz się do newslettera</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+        <footer class="footer is-vibrant-one">
+            <div class="container">
+                <div class="context has-text-centered">
+                    <div class="columns">
+                        <div class="column is-4">
+                            <p class="subtitle">Kontakt dla producentów</p>
+                            <ul>
+                                <li><a href="">Link nr 1</a></li>
+                                <li><a href="">Link nr 2</a></li>
+                                <li><a href="">Link nr 3</a></li>
+                                <li><a href="">Link nr 4</a></li>
+                                <li><a href="">Link nr 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="column is-4">
+                            <p class="subtitle">Kontakt dla widzów</p>
+                            <ul>
+                                <li><a href="">Link nr 1</a></li>
+                                <li><a href="">Link nr 2</a></li>
+                                <li><a href="">Link nr 3</a></li>
+                                <li><a href="">Link nr 4</a></li>
+                                <li><a href="">Link nr 5</a></li>
+                            </ul>
+                        </div>
+                        <div class="column is-4">
+                            <p class="subtitle">Media społecznościowe</p>
+                            <ul>
+                                <li class="icon"><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li class="icon"><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li class="icon"><a href=""><i class="fa fa-instagram"></i></a></li>
+                                <li class="icon"><a href=""><i class="fa fa-snapchat"></i></a></li>
+                                <li class="icon"><a href=""><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
 
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
     <script src="./node_modules/headroom.js/dist/headroom.js"></script>

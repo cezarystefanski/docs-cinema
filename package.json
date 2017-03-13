@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "bulma": "^0.3.2",
+    "font-awesome": "^4.7.0",
     "headroom.js": "^0.9.3"
   },
   "devDependencies": {},
