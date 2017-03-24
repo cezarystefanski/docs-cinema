@@ -85,9 +85,20 @@ parallaxIt();
 $(window).load(function() {
   var $loader = $('.loading-in-progress');
   var $content = $('.site-content');
+  var $logo = $('.logo-hero');
+  var $logoText = $('.container.has-text-centered.hidden-vis')
 
   setTimeout(function() {
     $content.show();
     $loader.fadeOut(1000);
   }, 500);
+
+  setTimeout(function() {
+    $logo.addClass('logo-hero-after');
+    $logo.removeClass('logo-hero');
+  }, 3500);
+
+  setTimeout(function() {
+    $logoText.removeClass('hidden-vis');
+  }, 4500);
 });

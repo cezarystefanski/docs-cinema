@@ -317,6 +317,34 @@ h1 {
   font-weight: 300;
 }
 
+.logo-hero {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(206, 164, 148, 0.7);
+  background-image: url('../assets/img/kino-dokumentalne-logo-2.png');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  transition: all 1s;
+}
+
+.logo-hero-after {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url('../assets/img/kino-dokumentalne-logo-2.png');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position-x: 50%;
+  background-position-y: 25%;
+  transition: 1s;
+}
+
+.hidden-vis {
+  visibility: hidden;
+}
 
 
 
