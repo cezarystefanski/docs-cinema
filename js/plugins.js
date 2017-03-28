@@ -104,3 +104,8 @@ $(window).load(function() {
     $logoText.removeClass('hidden-vis');
   }, 4500);
 });
+
+$('.zapisz').click(function() {
+  $(this).addClass('hidden');
+  $(this).siblings().eq(1).removeClass('hidden');
+})

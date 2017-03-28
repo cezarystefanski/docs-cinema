@@ -1,5 +1,6 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
+
 /*html {
     color: #222;
     font-size: 1em;
@@ -59,11 +60,11 @@ textarea {
 .logo-docs {
   background-image: url("../assets/img/hero-logo.jpg");
   background-attachment: fixed;
-    background-size: cover;
-    background-position-x: 20%;
+  background-size: cover;
+  background-position-x: 20%;
 }
 
-.logo-docs > .container {
+.logo-docs>.container {
   margin-top: 200px;
 }
 
@@ -74,11 +75,11 @@ textarea {
 }
 
 .footer.is-vibrant-one a {
-    color: #000;
+  color: #000;
 }
 
 .footer.is-vibrant-one a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .section.is-vibrant-two {
@@ -93,16 +94,16 @@ textarea {
 }
 
 .button.is-accent {
-    background-color: rgb(17, 58, 79);
-    color: #fff;
+  background-color: rgb(17, 58, 79);
+  color: #fff;
 }
 
 .loading-in-progress {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 99999;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99999;
 }
 
 .cube-folding {
@@ -115,6 +116,7 @@ textarea {
   transform: rotate(45deg);
   font-size: 0;
 }
+
 .cube-folding span {
   position: relative;
   width: 25px;
@@ -125,6 +127,7 @@ textarea {
   transform: scale(1.1);
   display: inline-block;
 }
+
 .cube-folding span::before {
   content: '';
   background-color: white;
@@ -142,36 +145,42 @@ textarea {
   -webkit-animation: folding 2.5s infinite linear both;
   animation: folding 2.5s infinite linear both;
 }
+
 .cube-folding .leaf2 {
   -moz-transform: rotateZ(90deg) scale(1.1);
   -ms-transform: rotateZ(90deg) scale(1.1);
   -webkit-transform: rotateZ(90deg) scale(1.1);
   transform: rotateZ(90deg) scale(1.1);
 }
+
 .cube-folding .leaf2::before {
   -moz-animation-delay: 0.3s;
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
   background-color: #f2f2f2;
 }
+
 .cube-folding .leaf3 {
   -moz-transform: rotateZ(270deg) scale(1.1);
   -ms-transform: rotateZ(270deg) scale(1.1);
   -webkit-transform: rotateZ(270deg) scale(1.1);
   transform: rotateZ(270deg) scale(1.1);
 }
+
 .cube-folding .leaf3::before {
   -moz-animation-delay: 0.9s;
   -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
   background-color: #f2f2f2;
 }
+
 .cube-folding .leaf4 {
   -moz-transform: rotateZ(180deg) scale(1.1);
   -ms-transform: rotateZ(180deg) scale(1.1);
   -webkit-transform: rotateZ(180deg) scale(1.1);
   transform: rotateZ(180deg) scale(1.1);
 }
+
 .cube-folding .leaf4::before {
   -moz-animation-delay: 0.6s;
   -webkit-animation-delay: 0.6s;
@@ -180,55 +189,66 @@ textarea {
 }
 
 @-moz-keyframes folding {
-  0%, 10% {
+  0%,
+  10% {
     -moz-transform: perspective(140px) rotateX(-180deg);
     transform: perspective(140px) rotateX(-180deg);
     opacity: 0;
   }
-  25%, 75% {
+  25%,
+  75% {
     -moz-transform: perspective(140px) rotateX(0deg);
     transform: perspective(140px) rotateX(0deg);
     opacity: 1;
   }
-  90%, 100% {
+  90%,
+  100% {
     -moz-transform: perspective(140px) rotateY(180deg);
     transform: perspective(140px) rotateY(180deg);
     opacity: 0;
   }
 }
+
 @-webkit-keyframes folding {
-  0%, 10% {
+  0%,
+  10% {
     -webkit-transform: perspective(140px) rotateX(-180deg);
     transform: perspective(140px) rotateX(-180deg);
     opacity: 0;
   }
-  25%, 75% {
+  25%,
+  75% {
     -webkit-transform: perspective(140px) rotateX(0deg);
     transform: perspective(140px) rotateX(0deg);
     opacity: 1;
   }
-  90%, 100% {
+  90%,
+  100% {
     -webkit-transform: perspective(140px) rotateY(180deg);
     transform: perspective(140px) rotateY(180deg);
     opacity: 0;
   }
 }
+
 @keyframes folding {
-  0%, 10% {
+  0%,
+  10% {
     -moz-transform: perspective(140px) rotateX(-180deg);
     -ms-transform: perspective(140px) rotateX(-180deg);
     -webkit-transform: perspective(140px) rotateX(-180deg);
     transform: perspective(140px) rotateX(-180deg);
     opacity: 0;
   }
-  25%, 75% {
+  25%,
+  75% {
     -moz-transform: perspective(140px) rotateX(0deg);
     -ms-transform: perspective(140px) rotateX(0deg);
     -webkit-transform: perspective(140px) rotateX(0deg);
     transform: perspective(140px) rotateX(0deg);
     opacity: 1;
   }
-  90%, 100% {
+  90%,
+  100% {
     -moz-transform: perspective(140px) rotateY(180deg);
     -ms-transform: perspective(140px) rotateY(180deg);
     -webkit-transform: perspective(140px) rotateY(180deg);
@@ -236,6 +256,7 @@ textarea {
     opacity: 0;
   }
 }
+
 .cube-wrapper {
   position: fixed;
   left: 50%;
@@ -246,6 +267,7 @@ textarea {
   height: 100px;
   text-align: center;
 }
+
 .cube-wrapper:after {
   content: '';
   position: absolute;
@@ -266,6 +288,7 @@ textarea {
   -webkit-animation: shadow 0.5s ease infinite alternate;
   animation: shadow 0.5s ease infinite alternate;
 }
+
 .cube-wrapper .loading {
   font-size: 12px;
   letter-spacing: 0.1em;
@@ -284,28 +307,33 @@ textarea {
     top: 35px;
   }
 }
+
 @-webkit-keyframes text {
   100% {
     top: 35px;
   }
 }
+
 @keyframes text {
   100% {
     top: 35px;
   }
 }
+
 @-moz-keyframes shadow {
   100% {
     bottom: -18px;
     width: 100px;
   }
 }
+
 @-webkit-keyframes shadow {
   100% {
     bottom: -18px;
     width: 100px;
   }
 }
+
 @keyframes shadow {
   100% {
     bottom: -18px;
@@ -347,7 +375,9 @@ h1 {
   background-size: 25%;
   background-position-x: 50%;
   background-position-y: 25%;
-  transition: 1s;
+  transition: all 1s;
+  -webkit-filter: grayscale(1) brightness(1) contrast(2.05);
+  filter: grayscale(1) brightness(1) contrast(2.05);
 }
 
 .hidden-vis {
@@ -362,7 +392,7 @@ h1 {
   top: 70%;
 }
 
-.logo-heading > p {
+.logo-heading>p {
   font-size: 2em;
   text-transform: uppercase;
 }
@@ -372,7 +402,7 @@ h1 {
   font-weight: bold;
 }
 
-.nav-left > .nav-item {
+.nav-left>.nav-item {
   font-size: 0;
   background-image: url('../assets/img/kino-dokumentalne-logo-2.png');
   background-size: 50%;
@@ -404,9 +434,16 @@ h1 {
   background-size: cover;
 }
 
-.doc-tile > h3 {
+.doc-tile>h3 {
   text-transform: uppercase;
   font-size: 2em;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.doc-tile.box:hover>h3 {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .doc-tile-1 {
@@ -423,7 +460,7 @@ h1 {
 }
 
 .doc-tile.box {
-  position:relative;
+  position: relative;
   vertical-align: middle;
   color: #000;
   display: flex;
@@ -434,7 +471,7 @@ h1 {
   padding: 0 20px;
   cursor: pointer;
   border: 8px solid rgba(255, 255, 255, 0);
-  -webkit-transition:0.5s;
+  -webkit-transition: 0.5s;
 }
 
 .doc-tile.box:hover {
@@ -442,14 +479,15 @@ h1 {
   color: #FFF;
 }
 
-.doc-tile.box::before, .doc-tile.box::after {
+.doc-tile.box::before,
+.doc-tile.box::after {
   width: 100%;
-  height:100%;
+  height: 100%;
   z-index: 3;
-  content:'';
+  content: '';
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   box-sizing: border-box;
   -webkit-transform: scale(0);
   transition: 0.5s;
@@ -467,7 +505,8 @@ h1 {
   -webkit-transform-origin: 100% 0%;
 }
 
-.doc.tile.box:hover::after, .box:hover::before {
+.doc-tile.box:hover::after,
+.box:hover::before {
   -webkit-transform: scale(1);
 }
 
@@ -482,9 +521,43 @@ h1 {
   }
 }
 
+.site-title h1,
+.site-title h2 {
+  font-family: 'Anton', sans-serif;
+}
+
+.site-title h1,
+.site-title h3 {
+  text-transform: uppercase;
+}
+
+.czemu h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.czemu p {
+  line-height: 2;
+  margin-top: 2em !important;
+}
+
+.czemu .film {
+  font-family: 'Anton', sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.globalnie {
+  font-family: "Anton", sans-serif;
+  margin-top: 2em;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+
 
 /*@media only screen and (min-width: 35em) {
 
@@ -497,9 +570,11 @@ h1 {
 
 }*/
 
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*.hidden {
     display: none !important;
@@ -545,9 +620,11 @@ h1 {
     *zoom: 1;
 }*/
 
+
 /* ==========================================================================
    Print styles
    ========================================================================== */
+
 
 /*@media print {
     *,
