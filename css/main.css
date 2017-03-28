@@ -63,6 +63,10 @@ textarea {
     background-position-x: 20%;
 }
 
+.logo-docs > .container {
+  margin-top: 200px;
+}
+
 .section.is-vibrant-one,
 .footer.is-vibrant-one {
   background-color: rgb(168, 180, 188);
@@ -83,7 +87,8 @@ textarea {
 }
 
 .section.is-vibrant-two .title,
-.section.is-vibrant-two .content {
+.section.is-vibrant-two .content,
+.section.is-vibrant-two .subtitle {
   color: #fff;
 }
 
@@ -320,6 +325,9 @@ h1 {
 .logo-hero {
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   background-color: rgba(206, 164, 148, 0.7);
   background-image: url('../assets/img/kino-dokumentalne-logo-2.png');
@@ -346,8 +354,133 @@ h1 {
   visibility: hidden;
 }
 
+.logo-heading {
+  display: block;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 70%;
+}
 
+.logo-heading > p {
+  font-size: 2em;
+  text-transform: uppercase;
+}
 
+.nav-item {
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+}
+
+.nav-left > .nav-item {
+  font-size: 0;
+  background-image: url('../assets/img/kino-dokumentalne-logo-2.png');
+  background-size: 50%;
+  width: 150px;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+
+.boxes {
+  padding-top: 2em
+}
+
+.desc-box {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1em;
+}
+
+.opis-rynku {
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+.doc-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-size: cover;
+}
+
+.doc-tile > h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.doc-tile-1 {
+  height: 400px !important;
+  background-image: url('../assets/img/doc-tile-dokumentalne.jpg');
+}
+
+.doc-tile-2 {
+  background-image: url('../assets/img/doc-tile-dzieciece.jpg')
+}
+
+.doc-tile-3 {
+  background-image: url('../assets/img/doc-tile-edukacyjne.jpg')
+}
+
+.doc-tile.box {
+  position:relative;
+  vertical-align: middle;
+  color: #000;
+  display: flex;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 8px solid rgba(255, 255, 255, 0);
+  -webkit-transition:0.5s;
+}
+
+.doc-tile.box:hover {
+  border: 8px solid #FFF;
+  color: #FFF;
+}
+
+.doc-tile.box::before, .doc-tile.box::after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+
+.doc-tile.box::before {
+  border-bottom: 8px solid #FFF;
+  border-left: 8px solid #FFF;
+  -webkit-transform-origin: 0 100%;
+}
+
+.doc-tile.box::after {
+  border-top: 8px solid #FFF;
+  border-right: 8px solid #FFF;
+  -webkit-transform-origin: 100% 0%;
+}
+
+.doc.tile.box:hover::after, .box:hover::before {
+  -webkit-transform: scale(1);
+}
+
+.nasze-uslugi-title {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-hero-after {
+    background-position-y: 18%;
+  }
+}
 
 /* ==========================================================================
    Media Queries

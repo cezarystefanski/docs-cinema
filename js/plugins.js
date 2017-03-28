@@ -86,7 +86,8 @@ $(window).load(function() {
   var $loader = $('.loading-in-progress');
   var $content = $('.site-content');
   var $logo = $('.logo-hero');
-  var $logoText = $('.container.has-text-centered.hidden-vis')
+  var $logoText = $('.container.has-text-centered.hidden-vis');
+  var $logoheading = $('.logo-heading');
 
   setTimeout(function() {
     $content.show();
@@ -96,6 +97,7 @@ $(window).load(function() {
   setTimeout(function() {
     $logo.addClass('logo-hero-after');
     $logo.removeClass('logo-hero');
+    $logoheading.fadeOut(1000);
   }, 3500);
 
   setTimeout(function() {
