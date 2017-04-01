@@ -98,14 +98,19 @@ $(window).load(function() {
     $logo.addClass('logo-hero-after');
     $logo.removeClass('logo-hero');
     $logoheading.fadeOut(1000);
-  }, 3500);
+  }, 1500);
 
   setTimeout(function() {
     $logoText.removeClass('hidden-vis');
-  }, 4500);
+  }, 2500);
 });
 
 $('.zapisz').click(function() {
   $(this).addClass('hidden');
   $(this).siblings().eq(1).removeClass('hidden');
 })
+
+$('.kontaktButton').click(function() {
+  $(this).addClass('hidden');
+  $(this).siblings().eq(5).removeClass('hidden');
+});

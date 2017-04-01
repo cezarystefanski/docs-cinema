@@ -390,6 +390,7 @@ h1 {
   width: 100%;
   position: absolute;
   top: 70%;
+  font-size: 1.6em;
 }
 
 .logo-heading>p {
@@ -543,6 +544,8 @@ h1 {
 
 .czemu .film {
   font-family: 'Anton', sans-serif;
+  font-size: 3.5em;
+  margin-top: 0em !important;
 }
 
 .hidden {
@@ -552,6 +555,58 @@ h1 {
 .globalnie {
   font-family: "Anton", sans-serif;
   margin-top: 2em;
+}
+
+.site-title > .title {
+  margin-top: 1em;
+  letter-spacing: 0.2em;
+}
+
+.site-title > .sibtitle {
+  line-height: 1.7;
+  font-size: 1.7em;
+}
+
+.boxtitle {
+  font-size: 1.5em;
+}
+
+.czemu > .title {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.2em;
+}
+
+.projekty {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(2px) saturate()30%;
+  filter: blur(2px) saturate(30%);
+}
+
+.projekty1 {
+  background-image: url("https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_240,w_320/v1490891639/bngyyvfb9hcacend4vqg.jpg");
+}
+
+.projekty2 {
+  background-image: url("https://c1.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fill,f_auto,h_240,w_320/v1490949200/aer1qxq8l8qebfxnnpyw.jpg");
+}
+
+.projekty3 {
+  background-image: url("https://ksr-ugc.imgix.net/assets/015/955/879/1c89609dbeac6c9fbb87c194fad028e4_original.jpg?w=680&fit=max&v=1490144534&auto=format&q=92&s=efa952b53bff065152e04d47ac9717bb");  
+}
+
+.projekt-column {
+  position: relative;
+}
+
+.content h4.projekt-subtitle {
+  position: absolute;
+    color: white;
+    z-index: 900;
+    bottom: 5px;
+    left: 25px;
+    font-size: 1.5em;
 }
 
 /* ==========================================================================
