@@ -36,7 +36,7 @@
         </div>
     </section>
     <div class="site-content site-content-hidden" style="display:none;">
-        <section class="hero is-fullheight is-dark">
+        <section class="hero is-fullheight is-dark first-hero">
             <div class="hero-body logo-docs" data-type="background" data-speed="5">
                 <div class="logo-hero">
                     <div class="logo-heading">
@@ -65,7 +65,7 @@
                     <div class="nav-left">
                         <a class="nav-item" href="/">Docs Cinema</a>
                     </div>
-                    <span id="nav-toggle" class="nav-toggle"></span>
+                    <span id="nav-toggle" class="nav-toggle"><a href="#" class="hamburger"></a></span>
                     <ul class="nav-right nav-menu">
                         <li class="nav-item"><a href="/">Nasze usługi</a></li>
                         <li class="nav-item"><a href="/">Dodaj film</a></li>
@@ -244,6 +244,24 @@
                 </div>
             </div>
         </section>
+        <section class="section is-vibrant-two has-text-centered">
+            <div class="content container">
+                <div class="level columns">
+                    <div class="level-item column is-half has-text-centered">
+                        <h3>Interesuje cię własna produkcja?</h3>
+                        <h4>Chcaiłbyś opowiedzieć światu własną historię?</h4>
+                        <p>Jeżeli masz pomysł, chęci i dużo zapału do pracy, zgłoś się do nas.</p>
+                        <button class="button is-info is-outlined is-inverted">Kontakt</button>
+                    </div>
+                    <div class="level-item column is-half has-text-centered">
+                        <h3>Twoje wsparcie ma znaczenie</h3>
+                        <h4>Donacja</h4>
+                        <p>Pomóż nam wspierać produkcję, promocję, i dystrybucję filmów dokumentalnych. 10% wszystkich darowizn trafi do organizacji charytatywnych.</p>
+                        <button class="button is-info is-outlined is-inverted">Donate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="section has-text-centered">
             <h3 class="subtitle has-text-centered">Zachęcamy do wspierania inicjatyw filmowych</h3>
             <h3 class="subtitle has-text-centered">Dla was wybieramy najciekawsze projekty</h3>
@@ -270,7 +288,7 @@
                 </div>
             </div>
         </section>
-        <section class="section is-vibrant-two has-text-centered">
+        <section class="section is-vibrant-one has-text-centered">
             <h2 class="title has-text-centered">Zespół</h2>
             <div class="content container">
                 <div class="tile is-ancestor has-text-centered">
@@ -292,7 +310,7 @@
                 <p>Chcesz dołączyć do zespołu? Szukasz nowych wyzwań?</p>
                 <p>NAPISZ DO NAS!</p>
                 <p>Szukamy miłośników filmów dokumentalnych, które chciałyby z nami razem tworzyć coś wspaniałego.</p>
-                <a class="button is-info is-outlined is-inverted is-large kontaktButton">Kontakt</a>
+                <a class="button is-outlined is-large kontaktButton">Kontakt</a>
                 <form action="" class="form hidden">
                     <div class="columns">
                         <div class="column is-one-quarter"><input type="text" class="input" placeholder="Imię i nazwisko"></div>
@@ -312,84 +330,51 @@
                 </form>
             </div>
         </section>
-        <section class="section">
+        <section class="section wspolpraca">
             <h2 class="title has-text-centered">Współpraca</h2>
             <div class="container content has-text-centered">
                 <div class="columns">
-                    <div class="column is-2">
+                    <div class="column is-2 is-half-mobile is-offset-1 firma-wspolpracujaca">
                         <div class="box">
-                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
-                            <p>firma 1</p>
+                            <a href="http://www.tulsaamericanfilmfest.com/" target="_blank">
+                                <figure class="image is-square"><img src="http://static1.squarespace.com/static/5552aa7be4b01424fe3ff04f/t/55f9082ee4b06385db7830df/1489102946535" alt="logo"></figure>
+                            </a>
+                            <p>Tulsa American Film Festival</p>
                         </div>
                     </div>
-                    <div class="column is-2">
+                    <div class="column is-2 is-half-mobile firma-wspolpracujaca">
                         <div class="box">
-                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
-                            <p>firma 2</p>
+                            <a href="https://www.sfp.org.pl/" target="_blank">
+                                <figure class="image is-square"><img src="https://www.sfp.org.pl/_core/_template/_all/logo.png" alt="logo"></figure>
+                            </a>
+                            <p>Stowarzyszenie Filmowców Polskich</p>
                         </div>
                     </div>
-                    <div class="column is-2">
+                    <div class="column is-2 is-half-mobile firma-wspolpracujaca">
                         <div class="box">
-                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
-                            <p>firma 3</p>
+                            <a href="http://www.nck.pl/" target="_blank">
+                                <figure class="image is-square"><img src="http://www.nck.pl/static/images/icons/menu-logo.png" alt="logo"></figure>
+                            </a>
+                            <p>Narodowe Centrum Kultury</p>
                         </div>
                     </div>
-                    <div class="column is-2">
+                    <div class="column is-2 is-half-mobile firma-wspolpracujaca">
                         <div class="box">
-                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
-                            <p>firma 4</p>
+                            <a href="http://www.nina.gov.pl/" target="_blank">
+                                <figure class="image is-square"><img class="nina" src="http://www.nina.gov.pl/images/logo.png" alt="logo"></figure>
+                            </a>
+                            <p>Narodowy Instytut Audiowizualny</p>
                         </div>
                     </div>
-                    <div class="column is-2">
+                    <div class="column is-2 is-half-mobile firma-wspolpracujaca">
                         <div class="box">
-                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
-                            <p>firma 5</p>
-                        </div>
-                    </div>
-                    <div class="column is-2">
-                        <div class="box">
-                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
-                            <p>firma 6</p>
+                            <a href="https://www.pisf.pl/" target="_blank">
+                                <figure class="image is-square"><img src="https://www.pisf.pl/tpl/img/logo_pl.png?v=1" alt="logo"></figure>
+                            </a>
+                            <p>Polski Instytut Sztuki Filmowej</p>
                         </div>
                     </div>
                 </div>
-                <div class="columns">
-                    <div class="column is-2">
-                        <div class="box">
-                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
-                            <p>firma 1</p>
-                        </div>
-                    </div>
-                    <div class="column is-2">
-                        <div class="box">
-                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
-                            <p>firma 2</p>
-                        </div>
-                    </div>
-                    <div class="column is-2">
-                        <div class="box">
-                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
-                            <p>firma 3</p>
-                        </div>
-                    </div>
-                    <div class="column is-2">
-                        <div class="box">
-                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
-                            <p>firma 4</p>
-                        </div>
-                    </div>
-                    <div class="column is-2">
-                        <div class="box">
-                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
-                            <p>firma 5</p>
-                        </div>
-                    </div>
-                    <div class="column is-2">
-                        <div class="box">
-                            <figure class="image is-square"><img src="https://placeimg.com/256/256/any" alt="logo"></figure>
-                            <p>firma 6</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

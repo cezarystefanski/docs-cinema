@@ -1,4 +1,6 @@
 // Avoid `console` errors in browsers that lack a console.
+// setInterval(() => console.info($('.logo-hero').innerHeight()), 100);
+
 (function() {
     var method;
     var noop = function () {};
@@ -36,6 +38,10 @@ document.addEventListener('DOMContentLoaded', headroomHeader);
 
 // makes the parallax elements
 function parallaxIt() {
+
+  if(window.innerHeight < $('.first-hero').innerHeight()) {
+    return;
+  }
 
   // create variables
   var $fwindow = $(window);
@@ -80,8 +86,6 @@ function parallaxIt() {
   $fwindow.trigger('scroll');
 };
 
-parallaxIt();
-
 $(window).load(function() {
   var $loader = $('.loading-in-progress');
   var $content = $('.site-content');
@@ -91,6 +95,7 @@ $(window).load(function() {
 
   setTimeout(function() {
     $content.show();
+    parallaxIt();
     $loader.fadeOut(1000);
   }, 500);
 
@@ -114,3 +119,7 @@ $('.kontaktButton').click(function() {
   $(this).addClass('hidden');
   $(this).siblings().eq(5).removeClass('hidden');
 });
+
+$('.hamburger').click(function() {
+  $('.nav-menu').toggleClass('is-active');
+})
